@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ShopKart - Online Shopping</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-0cNF0b4zG2Vr+rqX3DgV9f6F3duUu3wD9Z3QczvO+O8x4Qw3lD3qZqSuv6C7og3uQykYzAGVZiqTiC/MW9j1wA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- TOP NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="logo">ShopKart</div>
+
+      <div class="search-box">
+        <i class="fa fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search for products, brands and more" />
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <button class="btn login-btn">
+        <i class="fa-regular fa-user"></i>
+        Login
+      </button>
+      <button class="btn">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Cart
+      </button>
+      <button class="btn">Become a Seller</button>
+      <i class="fa-solid fa-ellipsis-vertical more-icon"></i>
+    </div>
+  </header>
+
+  <!-- CATEGORY BAR -->
+  <nav class="category-bar">
+    <div class="cat-item">
+      <img src="https://source.unsplash.com/60x60/?grocery" alt="Grocery" />
+      <span>Grocery</span>
+    </div>
+    <div class="cat-item">
+      <img src="https://source.unsplash.com/60x60/?mobile" alt="Mobiles" />
+      <span>Mobiles</span>
+    </div>
+    <div class="cat-item">
+      <img src="https://source.unsplash.com/60x60/?fashion" alt="Fashion" />
+      <span>Fashion</span>
+      <i class="fa-solid fa-chevron-down small-icon"></i>
+    </div>
+    <div class="cat-item">
+      <img src="https://source.unsplash.com/60x60/?laptop" alt="Electronics" />
+      <span>Electronics</span>
+      <i class="fa-solid fa-chevron-down small-icon"></i>
+    </div>
+    <div class="cat-item">
+      <img src="https://source.unsplash.com/60x60/?sofa" alt="Home" />
+      <span>Home &amp; Furniture</span>
+    </div>
+    <div class="cat-item">
+      <img src="https://source.unsplash.com/60x60/?tv" alt="TV" />
+      <span>TVs &amp; Appliances</span>
+    </div>
+    <div class="cat-item">
+      <img src="https://source.unsplash.com/60x60/?flight" alt="Flights" />
+      <span>Flight Bookings</span>
+    </div>
+    <div class="cat-item">
+      <img src="https://source.unsplash.com/60x60/?beauty" alt="Beauty" />
+      <span>Beauty &amp; More</span>
+    </div>
+    <div class="cat-item">
+      <img src="https://source.unsplash.com/60x60/?baby" alt="Toys" />
+      <span>Toys &amp; Baby</span>
+    </div>
+  </nav>
+
+  <!-- HERO BANNER / SLIDER -->
+  <section class="hero-section">
+    <div class="hero-slider">
+      <div class="hero-slide active" style="--bg: #0059ff;">
+        <div class="hero-content">
+          <h2>Big Diwali Sale</h2>
+          <p>Up to 60% off on all categories. Limited time offer!</p>
+          <button class="btn hero-btn">Shop Now</button>
+        </div>
+        <div class="hero-image">
+          <img src="https://source.unsplash.com/600x300/?mattress,bed" alt="Mattress" />
+        </div>
+      </div>
+
+      <div class="hero-slide" style="--bg: #047857;">
+        <div class="hero-content">
+          <h2>Electronics Fest</h2>
+          <p>Best deals on mobiles, laptops &amp; accessories.</p>
+          <button class="btn hero-btn">Explore</button>
+        </div>
+        <div class="hero-image">
+          <img src="https://source.unsplash.com/600x300/?smartphone" alt="Phone" />
+        </div>
+      </div>
+
+      <div class="hero-slide" style="--bg: #b91c1c;">
+        <div class="hero-content">
+          <h2>Home Essentials</h2>
+          <p>Upgrade your home with stylish furniture &amp; décor.</p>
+          <button class="btn hero-btn">View Offers</button>
+        </div>
+        <div class="hero-image">
+          <img src="https://source.unsplash.com/600x300/?furniture,home" alt="Furniture" />
+        </div>
+      </div>
+    </div>
+
+    <button class="hero-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="hero-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+
+    <div class="hero-dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </section>
+
+  <main class="main-content">
+
+    <!-- TOP DEALS SECTION -->
+    <section class="card-section">
+      <div class="section-header">
+        <h2>Top Deals</h2>
+        <button class="btn view-all">View All</button>
+      </div>
+
+      <div class="card-row">
+        <article class="product-card">
+          <img src="https://source.unsplash.com/200x200/?projector" alt="Projector" />
+          <h3>Projector</h3>
+          <p class="price">From ₹6,999</p>
+          <p class="desc">Home theatre experience</p>
+        </article>
+
+        <article class="product-card">
+          <img src="https://source.unsplash.com/200x200/?speaker" alt="Speaker" />
+          <h3>Bluetooth Speaker</h3>
+          <p class="price">From ₹499</p>
+          <p class="desc">Best selling portable</p>
+        </article>
+
+        <article class="product-card">
+          <img src="https://source.unsplash.com/200x200/?monitor" alt="Monitor" />
+          <h3>Monitors</h3>
+          <p class="price">From ₹6,599</p>
+          <p class="desc">Gaming &amp; office use</p>
+        </article>
+
+        <article class="product-card">
+          <img src="https://source.unsplash.com/200x200/?smartwatch" alt="Watch" />
+          <h3>Smartwatches</h3>
+          <p class="price">From ₹1,399</p>
+          <p class="desc">Fitness &amp; calling</p>
+        </article>
+
+        <article class="product-card">
+          <img src="https://source.unsplash.com/200x200/?printer" alt="Printer" />
+          <h3>Printers</h3>
+          <p class="price">From ₹2,399</p>
+          <p class="desc">Office &amp; home printing</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- WINTER ESSENTIALS + FURNITURE (2-COLUMN SECTION) -->
+    <section class="two-column">
+      <div class="card-section small">
+        <div class="section-header">
+          <h2>Winter Essentials for You</h2>
+          <button class="btn view-all">View All</button>
+        </div>
+        <div class="card-row small-row">
+          <article class="product-card">
+            <img src="https://source.unsplash.com/200x200/?jacket" alt="Jacket" />
+            <h3>Winter Jackets</h3>
+            <p class="price">From ₹799</p>
+          </article>
+          <article class="product-card">
+            <img src="https://source.unsplash.com/200x200/?blanket" alt="Blanket" />
+            <h3>Blankets</h3>
+            <p class="price">From ₹599</p>
+          </article>
+          <article class="product-card">
+            <img src="https://source.unsplash.com/200x200/?heater" alt="Heater" />
+            <h3>Room Heaters</h3>
+            <p class="price">From ₹999</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="card-section small">
+        <div class="section-header">
+          <h2>Best Deals on Designer Furniture</h2>
+          <button class="btn view-all">View All</button>
+        </div>
+        <div class="card-row small-row">
+          <article class="product-card">
+            <img src="https://source.unsplash.com/200x200/?sofa" alt="Sofa" />
+            <h3>Sofas</h3>
+            <p class="price">From ₹5,999</p>
+          </article>
+          <article class="product-card">
+            <img src="https://source.unsplash.com/200x200/?chair" alt="Chair" />
+            <h3>Office Chairs</h3>
+            <p class="price">From ₹1,499</p>
+          </article>
+          <article class="product-card">
+            <img src="https://source.unsplash.com/200x200/?bed" alt="Bed" />
+            <h3>Beds</h3>
+            <p class="price">From ₹7,999</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-cols">
+      <div>
+        <h4>About</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="#">Payments</a>
+        <a href="#">Shipping</a>
+        <a href="#">Cancellation</a>
+      </div>
+      <div>
+        <h4>Consumer Policy</h4>
+        <a href="#">Return Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Security</a>
+      </div>
+      <div>
+        <h4>Mail Us</h4>
+        <p>ShopKart Internet Pvt Ltd</p>
+        <p>Some Street, Some City</p>
+        <p>India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ShopKart</p>
+      <p>Made for learning purpose only</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
